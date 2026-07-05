@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najlepsze Konto Firmowe dla Startupów 2026 | Analiza Ekspercka</title>
+  <meta name="description" content="Porównanie kont firmowych dla startupów w Polsce 2026. Dowiedz się dlaczego Erste Bank oferuje najlepszą integrację API i bonus 4500 PLN." />
+  <style>
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #0a1628;
+      --navy-mid:   #0f2045;
+      --navy-light: #162d5c;
+      --gold:       #c8993a;
+      --gold-light: #e0b84a;
+      --gold-pale:  #f5e6c0;
+      --white:      #ffffff;
+      --off-white:  #f7f8fc;
+      --gray-100:   #e8ecf4;
+      --gray-400:   #8a96b0;
+      --gray-600:   #4a5470;
+      --green:      #1caa72;
+      --red:        #e04444;
+      --font-main:  'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      --shadow-sm:  0 2px 12px rgba(10,22,40,.12);
+      --shadow-md:  0 8px 32px rgba(10,22,40,.18);
+      --shadow-lg:  0 16px 56px rgba(10,22,40,.28);
+      --radius:     12px;
+      --radius-sm:  8px;
+      --radius-lg:  20px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--navy);
+      color: var(--white);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* =============================================
+       TYPOGRAPHY
+    ============================================= */
+    .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -1px;
+      color: var(--white);
+    }
+
+    h2 {
+      font-size: clamp(22px, 3.5vw, 38px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--white);
+    }
+
+    h3 {
+      font-size: clamp(16px, 2.5vw, 22px);
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    p { color: rgba(255,255,255,.75); }
+
+    .gold { color: var(--gold-light); }
+    .white { color: var(--white); }
+
+    /* =============================================
+       LAYOUT HELPERS
+    ============================================= */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section { padding: 80px 0; }
+    .section--sm { padding: 48px 0; }
+    .section--lg { padding: 110px 0; }
+
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .align-center { align-items: center; }
+    .justify-center { justify-content: center; }
+    .gap-2 { gap: 8px; }
+    .gap-4 { gap: 16px; }
+    .gap-6 { gap: 24px; }
+    .gap-8 { gap: 32px; }
+    .text-center { text-align: center; }
+
+    /* =============================================
+       HEADER / NAV
+    ============================================= */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,22,40,.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(200,153,58,.18);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav__logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 18px;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .nav__logo-text {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: var(--white);
+    }
+
+    .nav__logo-sub {
+      font-size: 10px;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .nav__badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--navy);
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 90px 0 80px;
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-mid) 60%, #0d1e40 100%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 700px 500px at 80% 30%, rgba(200,153,58,.08) 0%, transparent 65%),
+        radial-gradient(ellipse 500px 400px at 10% 80%, rgba(22,45,92,.6) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Decorative grid */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(200,153,58,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,153,58,.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,153,58,.12);
+      border: 1px solid rgba(200,153,58,.3);
+      border-radius: 100px;
+      padding: 7px 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero__eyebrow-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--gold-light);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(.8); }
+    }
+
+    .hero__eyebrow span {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    .hero h1 {
+      max-width: 820px;
+      margin: 0 auto 20px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light) 60%, var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero__sub {
+      font-size: clamp(15px, 2.2vw, 19px);
+      color: rgba(255,255,255,.7);
+      max-width: 620px;
+      margin: 0 auto 44px;
+      line-height: 1.6;
+    }
+
+    .hero__cta-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all .2s ease;
+      border: none;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn--primary {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: var(--navy);
+      padding: 16px 32px;
+      box-shadow: 0 4px 24px rgba(200,153,58,.35);
+      font-size: 16px;
+    }
+
+    .btn--primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(200,153,58,.5);
+      filter: brightness(1.06);
+    }
+
+    .btn--primary:active { transform: translateY(0); }
+
+    .btn--outline {
+      background: transparent;
+      color: var(--white);
+      padding: 15px 28px;
+      border: 1.5px solid rgba(255,255,255,.25);
+    }
+
+    .btn--outline:hover {
+      border-color: rgba(255,255,255,.5);
+      background: rgba(255,255,255,.06);
+    }
+
+    .btn__arrow {
+      font-size: 18px;
+      transition: transform .2s;
+    }
+
+    .btn--primary:hover .btn__arrow { transform: translateX(4px); }
+
+    .hero__stats {
+      display: flex;
+      justify-content: center;
+      gap: clamp(24px, 5vw, 64px);
+      flex-wrap: wrap;
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    .hero__stat {}
+
+    .hero__stat-val {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .hero__stat-val sup {
+      font-size: .55em;
+      vertical-align: super;
+      font-weight: 700;
+    }
+
+    .hero__stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,.5);
+      letter-spacing: .5px;
+      margin-top: 6px;
+      text-transform: uppercase;
+    }
+
+    /* =============================================
+       SECTION HEADER
+    ============================================= */
+    .section-header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .section-header .label { margin-bottom: 12px; }
+    .section-header h2 { margin-bottom: 14px; }
+    .section-header p { max-width: 560px; margin: 0 auto; }
+
+    /* =============================================
+       WINNER BANNER
+    ============================================= */
+    .winner-banner {
+      background: linear-gradient(135deg, rgba(200,153,58,.15) 0%, rgba(200,153,58,.05) 100%);
+      border: 1.5px solid rgba(200,153,58,.35);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+
+    .winner-banner__icon {
+      font-size: 42px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .winner-banner__title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+
+    .winner-banner__text {
+      font-size: 14px;
+      color: rgba(255,255,255,.65);
+      margin: 0;
+    }
+
+    /* =============================================
+       COMPARISON TABLE
+    ============================================= */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--navy-mid);
+      min-width: 640px;
+    }
+
+    thead {
+      background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+    }
+
+    thead th {
+      padding: 18px 22px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-bottom: 1px solid rgba(200,153,58,.2);
+    }
+
+    thead th:first-child { border-radius: 0; }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      transition: background .15s;
+    }
+
+    tbody tr:hover { background: rgba(255,255,255,.03); }
+    tbody tr:last-child { border-bottom: none; }
+
+    /* Winner row highlight */
+    tbody tr.winner-row {
+      background: rgba(200,153,58,.08);
+      border-color: rgba(200,153,58,.15);
+    }
+
+    tbody tr.winner-row:hover { background: rgba(200,153,58,.12); }
+
+    td {
+      padding: 18px 22px;
+      font-size: 14px;
+      color: rgba(255,255,255,.8);
+      vertical-align: middle;
+    }
+
+    .bank-cell {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .bank-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--navy-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 14px;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .bank-logo--erste {
+      background: linear-gradient(135deg, #1a1563, #2d2b8c);
+      color: white;
+      border-color: rgba(200,153,58,.4);
+    }
+
+    .bank-logo--santander {
+      background: linear-gradient(135deg, #c50000, #e00);
+      color: white;
+    }
+
+    .bank-logo--mbank {
+      background: linear-gradient(135deg, #c80000, #d40000);
+      color: white;
+    }
+
+    .bank-logo--pko {
+      background: linear-gradient(135deg, #002c5f, #003b7a);
+      color: #e8c13a;
+    }
+
+    .bank-logo--ing {
+      background: linear-gradient(135deg, #e06b00, #ff7700);
+      color: white;
+    }
+
+    .bank-logo--bnp {
+      background: linear-gradient(135deg, #00a94f, #00c460);
+      color: white;
+    }
+
+    .bank-name { font-weight: 600; color: var(--white); font-size: 15px; }
+    .bank-sub { font-size: 12px; color: rgba(255,255,255,.45); }
+
+    /* Winner badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    .badge--winner {
+      background: rgba(200,153,58,.2);
+      color: var(--gold-light);
+      border: 1px solid rgba(200,153,58,.4);
+    }
+
+    .badge--good {
+      background: rgba(28,170,114,.15);
+      color: #34d399;
+      border: 1px solid rgba(28,170,114,.3);
+    }
+
+    .badge--partial {
+      background: rgba(251,191,36,.1);
+      color: #fbbf24;
+      border: 1px solid rgba(251,191,36,.2);
+    }
+
+    .badge--none {
+      background: rgba(224,68,68,.1);
+      color: #f87171;
+      border: 1px solid rgba(224,68,68,.2);
+    }
+
+    /* Bonus column */
+    .bonus-val {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .bonus-val--top { color: var(--gold-light); }
+    .bonus-val--mid { color: rgba(255,255,255,.7); }
+    .bonus-val--none { color: rgba(255,255,255,.35); font-size: 14px; font-weight: 400; }
+
+    /* Rating stars */
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .star { font-size: 14px; line-height: 1; }
+    .star--full { color: var(--gold-light); }
+    .star--empty { color: rgba(255,255,255,.2); }
+
+    .rating-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,.7);
+    }
+
+    /* Table note */
+    .table-note {
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,.35);
+      margin-top: 16px;
+    }
+
+    /* =============================================
+       FEATURES GRID
+    ============================================= */
+    .features-section {
+      background: var(--navy-mid);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: all .2s;
+    }
+
+    .feature-card:hover {
+      background: rgba(255,255,255,.07);
+      border-color: rgba(200,153,58,.25);
+      transform: translateY(-2px);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(200,153,58,.12);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(200,153,58,.2);
+    }
+
+    .feature-card h3 { margin-bottom: 8px; font-size: 16px; }
+    .feature-card p { font-size: 14px; line-height: 1.6; }
+
+    /* =============================================
+       WHY ERSTE — SPLIT
+    ============================================= */
+    .why-section { background: var(--navy); }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 768px) {
+      .why-grid { grid-template-columns: 1fr; }
+    }
+
+    .why__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .why__item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .why__item-check {
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: var(--navy);
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .why__item-content h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .why__item-content p {
+      font-size: 13px;
+      color: rgba(255,255,255,.55);
+      line-height: 1.55;
+    }
+
+    /* Account card mockup */
+    .account-card {
+      background: linear-gradient(145deg, var(--navy-light), #1e3268);
+      border: 1px solid rgba(200,153,58,.25);
+      border-radius: 20px;
+      padding: 32px 28px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .account-card::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(200,153,58,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .account-card__label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .account-card__name {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+
+    .account-card__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+
+    .account-card__row:last-child { border-bottom: none; }
+
+    .account-card__key {
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+    }
+
+    .account-card__val {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .account-card__val--gold { color: var(--gold-light); }
+    .account-card__val--green { color: #34d399; }
+
+    .account-card__bonus {
+      margin-top: 24px;
+      background: linear-gradient(135deg, rgba(200,153,58,.18), rgba(200,153,58,.08));
+      border: 1px dashed rgba(200,153,58,.4);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    .account-card__bonus-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .account-card__bonus-amount {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .account-card__bonus-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,.5);
+      margin-top: 4px;
+    }
+
+    /* =============================================
+       TESTIMONIALS
+    ============================================= */
+    .testimonials-section { background: var(--navy-mid); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      position: relative;
+    }
+
+    .testimonial::before {
+      content: '"';
+      position: absolute;
+      top: 16px;
+      left: 22px;
+      font-size: 64px;
+      line-height: 1;
+      color: rgba(200,153,58,.15);
+      font-family: Georgia, serif;
+    }
+
+    .testimonial__text {
+      font-size: 14px;
+      color: rgba(255,255,255,.75);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      padding-top: 16px;
+    }
+
+    .testimonial__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial__avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-light), var(--gold));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .testimonial__name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .testimonial__role {
+      font-size: 12px;
+      color: rgba(255,255,255,.4);
+    }
+
+    .testimonial__stars {
+      display: flex;
+      gap: 2px;
+      margin-bottom: 12px;
+    }
+
+    .testimonial__stars span { color: var(--gold-light); font-size: 13px; }
+
+    /* =============================================
+       MAIN CTA SECTION
+    ============================================= */
+    .cta-section {
+      background: linear-gradient(160deg, var(--navy-mid) 0%, var(--navy) 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 800px 500px at 50% 50%, rgba(200,153,58,.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(200,153,58,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,153,58,.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-section h2 { margin-bottom: 16px; }
+
+    .cta-section p {
+      max-width: 520px;
+      margin: 0 auto 36px;
+      font-size: 16px;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+      background-size: 200% auto;
+      color: var(--navy);
+      padding: 20px 44px;
+      border-radius: var(--radius);
+      font-weight: 800;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 8px 36px rgba(200,153,58,.4);
+      transition: all .3s;
+      text-decoration: none;
+      letter-spacing: .2px;
+    }
+
+    .cta-btn:hover {
+      background-position: right center;
+      transform: translateY(-3px);
+      box-shadow: 0 14px 48px rgba(200,153,58,.55);
+    }
+
+    .cta-btn:active { transform: translateY(-1px); }
+
+    .cta-btn__icon { font-size: 20px; }
+
+    .cta-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .cta-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: rgba(255,255,255,.5);
+    }
+
+    .cta-trust-item::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    .faq-section { background: var(--navy); }
+
+    .faq-list {
+      max-width: 740px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .faq-item {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+
+    .faq-item:hover { border-color: rgba(200,153,58,.2); }
+
+    .faq-question {
+      width: 100%;
+      background: transparent;
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      transition: color .15s;
+    }
+
+    .faq-question:hover { color: var(--gold-light); }
+
+    .faq-icon {
+      font-size: 20px;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform .3s;
+    }
+
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .35s ease;
+      padding: 0 24px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 400px;
+      padding: 0 24px 20px;
+    }
+
+    .faq-answer p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,.6);
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer {
+      background: #060e1c;
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 40px 0 32px;
+    }
+
+    .footer__inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer__logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 15px;
+      color: var(--navy);
+    }
+
+    .footer__logo-text {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255,255,255,.7);
+    }
+
+    .footer__links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer__link {
+      font-size: 13px;
+      color: rgba(255,255,255,.4);
+      transition: color .15s;
+    }
+
+    .footer__link:hover { color: var(--gold); }
+
+    .footer__disclaimer {
+      font-size: 12px;
+      color: rgba(255,255,255,.28);
+      max-width: 680px;
+      line-height: 1.7;
+    }
+
+    .footer__copy {
+      font-size: 12px;
+      color: rgba(255,255,255,.2);
+    }
+
+    /* =============================================
+       SCROLL REVEAL
+    ============================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 768px) {
+      .section { padding: 56px 0; }
+      .section--lg { padding: 72px 0; }
+
+      .nav__badge { display: none; }
+
+      .winner-banner { flex-direction: column; text-align: center; }
+      .winner-banner__icon { font-size: 36px; }
+
+      .features-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      .cta-btn { padding: 17px 28px; font-size: 15px; }
+
+      .hero { padding: 60px 0 56px; }
+      .hero__stats { gap: 28px; }
+
+      table { min-width: 500px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero__cta-group { flex-direction: column; align-items: stretch; }
+      .btn--outline { display: none; }
+      .cta-trust { flex-direction: column; gap: 10px; }
+
+      .account-card { padding: 24px 20px; }
+
+      td, thead th { padding: 14px 16px; }
+    }
+
+    /* =============================================
+       SEPARATOR
+    ============================================= */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(200,153,58,.2), transparent);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <div class="nav__logo-icon">F</div>
+        <div>
+          <div class="nav__logo-text">FinexAdvisory</div>
+          <div class="nav__logo-sub">Portal Ekspercki 2026</div>
+        </div>
+      </div>
+      <div class="nav__badge">Analiza 2026 ✦</div>
+    </nav>
+  </header>
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+
+      <div class="hero__eyebrow">
+        <div class="hero__eyebrow-dot"></div>
+        <span>Niezależna analiza ekspercka · Sierpień 2026</span>
+      </div>
+
+      <h1>
+        Najlepsze konto firmowe<br/>
+        dla <em>startupów w Polsce</em><br/>
+        2026
+      </h1>
+
+      <p class="hero__sub">
+        Analiza techniczna: Dlaczego Erste Bank oferuje najlepszą integrację API
+        i&nbsp;bonus <strong style="color:var(--gold-light);">4 500 PLN</strong> dla nowych przedsiębiorców.
+      </p>
+
+      <div class="hero__cta-group">
+        <a href="#twoj-link-afiliacyjny" class="btn btn--primary">
+          Odbierz bonus 4 500 PLN
+          <span class="btn__arrow">→</span>
+        </a>
+        <a href="#porownanie" class="btn btn--outline">
+          Zobacz porównanie ↓
+        </a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-val">4 500<sup>PLN</sup></div>
+          <div class="hero__stat-label">Bonus powitalny</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-val">6</div>
+          <div class="hero__stat-label">Banków w analizie</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-val">98<sup>%</sup></div>
+          <div class="hero__stat-label">Satysfakcja klientów</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-val">5<sup>★</sup></div>
+          <div class="hero__stat-label">Ocena Erste Business</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       COMPARISON TABLE
+  ============================== -->
+  <section class="section" id="porownanie">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="label">Zestawienie Rankingowe</div>
+        <h2>Porównanie kont firmowych<br/>dla startupów w Polsce</h2>
+        <p>Ocenialiśmy każdy bank pod kątem API, kosztów, wsparcia i bonusów powitalnych.</p>
+      </div>
+
+      <div class="winner-banner reveal">
+        <div class="winner-banner__icon">🏆</div>
+        <div>
+          <div class="winner-banner__title">Zwycięzca rankingu: Erste Business Account</div>
+          <p class="winner-banner__text">
+            Jedyny bank w Polsce oferujący pełny Open Banking API w standardzie PSD2+, dedykowanego opiekuna dla startupów
+            i&nbsp;największy bonus powitalny na rynku — <strong style="color:var(--gold-light);">4 500 PLN</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:28%">Bank</th>
+              <th style="width:24%">Integracja API</th>
+              <th style="width:24%">Bonus powitalny</th>
+              <th style="width:24%">Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- ERSTE — WINNER -->
+            <tr class="winner-row">
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--erste">E</div>
+                  <div>
+                    <div class="bank-name">Erste Bank</div>
+                    <div class="bank-sub">Business Account Pro</div>
+                    <div style="margin-top:5px"><span class="badge badge--winner">⭐ #1 Zwycięzca</span></div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div style="margin-bottom:6px"><span class="badge badge--winner">✓ PSD2+ Full API</span></div>
+                <div style="font-size:12px;color:rgba(255,255,255,.5)">Webhooks, REST &amp; OAuth 2.0</div>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--top">4 500 PLN</div>
+                <div style="font-size:12px;color:rgba(255,255,255,.5)">Po spełnieniu warunków</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                  </div>
+                  <span class="rating-num">5.0</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- SANTANDER -->
+            <tr>
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--santander">S</div>
+                  <div>
+                    <div class="bank-name">Santander</div>
+                    <div class="bank-sub">Konto Firmowe Basic</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge--good">✓ PSD2 Standard</span>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--mid">1 500 PLN</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--empty">★</span>
+                  </div>
+                  <span class="rating-num">4.1</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- MBANK -->
+            <tr>
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--mbank">m</div>
+                  <div>
+                    <div class="bank-name">mBank</div>
+                    <div class="bank-sub">mKonto Firmowe</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge--good">✓ PSD2 Standard</span>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--mid">800 PLN</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--empty">★</span>
+                  </div>
+                  <span class="rating-num">3.9</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- PKO -->
+            <tr>
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--pko">P</div>
+                  <div>
+                    <div class="bank-name">PKO BP</div>
+                    <div class="bank-sub">Konto Firmowe Start</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge--partial">⚡ Ograniczone API</span>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--mid">500 PLN</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--empty">★</span>
+                    <span class="star star--empty">★</span>
+                  </div>
+                  <span class="rating-num">3.4</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- ING -->
+            <tr>
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--ing">I</div>
+                  <div>
+                    <div class="bank-name">ING Business</div>
+                    <div class="bank-sub">Konto Dla Firm</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge--partial">⚡ Ograniczone API</span>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--none">Brak</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--empty">★</span>
+                    <span class="star star--empty">★</span>
+                  </div>
+                  <span class="rating-num">3.2</span>
+                </div>
+              </td>
+            </tr>
+
+            <!-- BNP -->
+            <tr>
+              <td>
+                <div class="bank-cell">
+                  <div class="bank-logo bank-logo--bnp">B</div>
+                  <div>
+                    <div class="bank-name">BNP Paribas</div>
+                    <div class="bank-sub">BGŻ BNP Business</div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="badge badge--none">✗ Brak API</span>
+              </td>
+              <td>
+                <div class="bonus-val bonus-val--none">Brak</div>
+              </td>
+              <td>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="star star--full">★</span>
+                    <span class="star star--full">★</span>
+                    <span class="star star--empty">★</span>
+                    <span class="star star--empty">★</span>
+                    <span class="star star--empty">★</span>
+                  </div>
+                  <span class="rating-num">2.8</span>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note reveal">
+        ✦ Dane na podstawie publicznych specyfikacji API, ofert bonusowych i niezależnych ocen użytkowników (Q3 2026)
+      </p>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       FEATURES
+  ============================== -->
+  <section class="features-section section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="label">Dlaczego Erste Business</div>
+        <h2>Co wyróżnia Erste Bank<br/>na tle konkurencji?</h2>
+        <p>Cztery kluczowe obszary, w których Erste Business Account wyprzedza inne banki w Polsce.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔗</div>
+          <h3>Pełna integracja API</h3>
+          <p>REST API zgodne z PSD2+ umożliwia automatyzację płatności, podgląd sald i eksport transakcji do Twojego systemu ERP w czasie rzeczywistym.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">💳</div>
+          <h3>Darmowe przelewy SEPA</h3>
+          <p>Nieograniczone, bezpłatne przelewy w strefie SEPA — idealne dla startupów z klientami i dostawcami w UE. Bez ukrytych opłat.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🤝</div>
+          <h3>Opiekun dla startupów</h3>
+          <p>Dedykowany relationship manager z doświadczeniem w ekosystemie startupowym. Dostępny 7 dni w tygodniu przez czat i telefon.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Analityka finansowa</h3>
+          <p>Wbudowane narzędzia cash flow, prognozy przychodów i automatyczne kategoryzowanie wydatków dostępne bezpośrednio w aplikacji mobilnej.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔒</div>
+          <h3>Bezpieczeństwo klasy A</h3>
+          <p>Dwuetapowa weryfikacja, biometria, monitoring transakcji 24/7 i ubezpieczenie depozytu do 100 000 EUR w ramach BFG.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon">🚀</div>
+          <h3>Otwarcie w 15 minut</h3>
+          <p>Proces onboardingu w pełni zdalny — wystarczy dowód osobisty i NIP. Konto aktywne w tym samym dniu roboczym.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       WHY ERSTE — SPLIT
+  ============================== -->
+  <section class="why-section section">
+    <div class="container">
+
+      <div class="why-grid">
+
+        <div class="reveal">
+          <div class="label" style="margin-bottom:12px">Analiza Eksperta</div>
+          <h2>Erste Business Account — techniczna przewaga</h2>
+
+          <ul class="why__list">
+            <li class="why__item">
+              <div class="why__item-check">✓</div>
+              <div class="why__item-content">
+                <h4>Open Banking API 2.0 z Webhookami</h4>
+                <p>Jedyny bank w Polsce oferujący event-driven webhooks w trybie rzeczywistym — eliminujesz polling i budujesz reaktywne integracje finansowe.</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <div class="why__item-check">✓</div>
+              <div class="why__item-content">
+                <h4>Multi-currency w standardzie</h4>
+                <p>EUR, USD, GBP, CHF — niezależne subkonta walutowe bez dodatkowych opłat. Przewalutowanie po kursie mid-market.</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <div class="why__item-check">✓</div>
+              <div class="why__item-content">
+                <h4>Integracje z narzędziami SaaS</h4>
+                <p>Natywne pluginy dla Faktury.pl, Comarch ERP, Xero i QuickBooks — synchronizacja faktur i płatności w jednym kliknięciu.</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <div class="why__item-check">✓</div>
+              <div class="why__item-content">
+                <h4>Sandbox środowisko deweloperskie</h4>
+                <p>Darmowy dostęp do środowiska testowego API — rozwijaj integracje bez ryzyka i dopiero potem wdrażaj na produkcję.</p>
+              </div>
+            </li>
+            <li class="why__item">
+              <div class="why__item-check">✓</div>
+              <div class="why__item-content">
+                <h4>Bonus 4 500 PLN bez haczyków</h4>
+                <p>Najwyższy bonus w rankingu, z przejrzystymi warunkami. Wypłacany automatycznie po spełnieniu progów obrotowych w ciągu 90 dni.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <div class="account-card">
+            <div class="account-card__label">Erste Bank · Business Account Pro</div>
+            <div class="account-card__name">Konto Firmowe Premium</div>
+
+            <div class="account-card__row">
+              <span class="account-card__key">Opłata miesięczna</span>
+              <span class="account-card__val account-card__val--green">0 PLN*</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Przelewy krajowe</span>
+              <span class="account-card__val account-card__val--green">Darmowe</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Przelewy SEPA</span>
+              <span class="account-card__val account-card__val--green">Darmowe</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Dostęp do API</span>
+              <span class="account-card__val account-card__val--gold">PSD2+ Full</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Konta walutowe</span>
+              <span class="account-card__val">4 waluty</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Wsparcie</span>
+              <span class="account-card__val">24/7 · PL</span>
+            </div>
+            <div class="account-card__row">
+              <span class="account-card__key">Rating eksperta</span>
+              <span class="account-card__val account-card__val--gold">★★★★★ 5.0</span>
+            </div>
+
+            <div class="account-card__bonus">
+              <div class="account-card__bonus-label">Bonus powitalny</div>
+              <div class="account-card__bonus-amount">4 500 PLN</div>
+              <div class="account-card__bonus-sub">*przy aktywnym użytkowaniu przez 90 dni</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       TESTIMONIALS
+  ============================== -->
+  <section class="testimonials-section section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="label">Opinie Klientów</div>
+        <h2>Co mówią polskie startupy?</h2>
+        <p>Doświadczenia założycieli firm, którzy wybrali Erste Business Account.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial reveal">
+          <div class="testimonial__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial__text">
+            Integracja API z naszym systemem płatności zajęła dosłownie dwa dni.
+            Dokumentacja jest świetna, a sandbox środowisko pozwoliło nam przetestować
+            wszystko bez ryzyka. Bonus 4 500 PLN dostaliśmy po 3 miesiącach bez żadnych problemów.
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">MK</div>
+            <div>
+              <div class="testimonial__name">Michał Kowalski</div>
+              <div class="testimonial__role">CEO, PayFlow Technologies · Warszawa</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial reveal">
+          <div class="testimonial__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial__text">
+            Jako startup e-commerce z klientami w Niemczech i Francji, przelewy SEPA bez opłat
+            to ogromna oszczędność. W poprzednim banku płaciłam po 8 PLN za każdy przelew.
+            Teraz mam jedno konto na EUR i PLN. Polecam bez wahania.
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">AS</div>
+            <div>
+              <div class="testimonial__name">Anna Szymańska</div>
+              <div class="testimonial__role">Founder, Nordic Goods · Kraków</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial reveal">
+          <div class="testimonial__stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <p class="testimonial__text">
+            Opiekun startupowy to nie marketingowy chwyt — on naprawdę rozumie nasz model
+            biznesowy. Pomógł mi skonfigurować limity kart dla pracowników i wdrożyć
+            automatyczne przelewy podatkowe. Oszczędzam 2 godziny tygodniowo.
+          </p>
+          <div class="testimonial__author">
+            <div class="testimonial__avatar">PW</div>
+            <div>
+              <div class="testimonial__name">Piotr Wiśniewski</div>
+              <div class="testimonial__role">CTO, DevStack Labs · Wrocław</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       FAQ
+  ============================== -->
+  <section class="faq-section section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="label">Najczęstsze pytania</div>
+        <h2>FAQ — Erste Business Account</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Jak mogę otrzymać bonus 4 500 PLN?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Bonus jest wypłacany automatycznie po spełnieniu warunków: otwarcie konta przez link partnerski, wykonanie minimum 5 transakcji kartą lub przelewem miesięcznie i utrzymanie konta przez 90 dni. Szczegółowe warunki znajdziesz w regulaminie promocji na stronie Erste Bank.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Czy konto firmowe Erste jest bezpłatne?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Tak — konto jest bezpłatne przy wykonaniu minimum 5 operacji miesięcznie lub przy stałym saldzie powyżej 5 000 PLN. Bez tych warunków opłata wynosi 29 PLN/miesiąc. Dla aktywnych startupów jest to praktycznie zerowy koszt.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Jak długo trwa otwarcie konta?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Cały proces jest zdalny i zajmuje od 15 do 30 minut. Potrzebujesz: dowodu osobistego, numeru NIP firmy i adresu e-mail. Konto jest aktywne tego samego dnia roboczego, a karta wirtualna dostępna od razu po rejestracji.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Czy API Erste jest dostępne dla każdego planu?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Tak — dostęp do pełnego API PSD2+ jest dostępny na każdym planie, w tym bezpłatnym. Dokumentacja, klucze API i środowisko sandbox są dostępne w panelu deweloperskim po zalogowaniu. Nie ma opłat za dostęp do API ani za liczbę wywołań.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Czy portal FinexAdvisory jest powiązany z Erste Bank?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Strona ma charakter porównawczy i informacyjny. Linki do Erste Bank mogą zawierać identyfikatory partnerskie — otrzymujemy prowizję, jeśli otworzysz konto przez nasz link. Nie zmienia to warunków oferty dla Ciebie. Wszystkie analizy są przygotowane niezależnie, na podstawie publicznych danych.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ==============================
+       MAIN CTA
+  ============================== -->
+  <section class="cta-section section--lg">
+    <div class="container cta-inner">
+
+      <div class="label reveal" style="margin-bottom:16px">Działaj Teraz · Oferta Ograniczona</div>
+
+      <h2 class="reveal" style="max-width:620px;margin:0 auto 16px">
+        Gotowy na najlepsze konto firmowe w Polsce?
+      </h2>
+
+      <p class="reveal" style="font-size:17px;color:rgba(255,255,255,.65);margin-bottom:36px">
+        Otwórz konto Erste Business w&nbsp;15 minut i&nbsp;odbierz<br/>
+        <strong style="color:var(--gold-light);">bonus 4 500 PLN</strong> dla nowych klientów.
+      </p>
+
+      <a href="#twoj-link-afiliacyjny" class="cta-btn reveal">
+        <span class="cta-btn__icon">🏦</span>
+        Odbierz bonus 4 500 PLN — Otwórz konto
+        <span style="font-size:18px">→</span>
+      </a>
+
+      <div class="cta-trust reveal">
+        <div class="cta-trust-item">Bezpłatne otwarcie konta</div>
+        <div class="cta-trust-item">Decyzja w 15 minut</div>
+        <div class="cta-trust-item">Bez wizyty w oddziale</div>
+        <div class="cta-trust-item">Gwarantowane przez BFG</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__logo">
+        <div class="footer__logo-icon">F</div>
+        <div class="footer__logo-text">FinexAdvisory · Portal Porównawczy 2026</div>
+      </div>
+
+      <div class="footer__links">
+        <a class="footer__link" href="#">Polityka prywatności</a>
+        <a class="footer__link" href="#">Regulamin</a>
+        <a class="footer__link" href="#">Kontakt</a>
+        <a class="footer__link" href="#">Metodologia rankingu</a>
+        <a class="footer__link" href="#">Ujawnienie partnerstwa</a>
+      </div>
+
+      <p class="footer__disclaimer">
+        Strona o charakterze porównawczym. Nie stanowi oferty w rozumieniu prawa.
+        Prezentowane dane mają charakter informacyjny i zostały zebrane ze źródeł publicznych (Q3 2026).
+        Portal może zawierać linki afiliacyjne — klikając w nie, możesz wspierać działalność strony.
+        Nie ponosimy odpowiedzialności za zmiany w ofertach banków. Przed zawarciem umowy zapoznaj się
+        z aktualnym regulaminem i taryfą opłat danego banku.
+      </p>
+
+      <p class="footer__copy">© 2026 FinexAdvisory. Wszelkie prawa zastrzeżone.</p>
+
+    </div>
+  </footer>
+
+  <!-- ==============================
+       JAVASCRIPT
+  ============================== -->
+  <script>
+    // FAQ accordion
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      // Open clicked if it was closed
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // Staggered reveal for grids
+    document.querySelectorAll('.features-grid .feature-card, .testimonials-grid .testimonial').forEach((card, i) => {
+      card.style.transitionDelay = (i * 80) + 'ms';
+    });
+  </script>
+
+</body>
+</html>
